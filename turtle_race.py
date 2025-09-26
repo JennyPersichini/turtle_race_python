@@ -4,8 +4,8 @@ from random import randint
 screen = Screen()                                                                              # creo una istanza schreen della classe Schreen
 screen.setup(width=500, height=400)                                                            # i parametri sono le musure in pixel della finestra
 giocata = screen.textinput(title="Giocata", prompt="Scegli il colore della tua tartaruga:")    # chiedo all'utente la sua giocata
-colori = ["red", "green", "yellow", "blue", "pink", "purple"]   
-posizione_y = [0, -25, -50, 25, 50, 75]                               # creo una lista di colori, saranno poi i colori delle tartarughe in gara
+colori = ["red", "green", "yellow", "blue", "pink", "purple"]                                  # creo una lista di colori, saranno poi i colori delle tartarughe in gara
+posizione_y = [0, -25, -50, 25, 50, 75]                               
 
 # t = Turtle(shape = "turtle")                                                                 # creo una istanza t della classe Turtle / passando il parametro shape ottengo lo stesso risultato del metodo shape()
 # t.shape("turtle")                                                                            # con il metodo shape() cambio la forma del "personaggio" che di default è una freccia verso dx 
@@ -20,7 +20,7 @@ for num in range(6):
     t.color(colori[num])
     t.penup()                                                                                      
     t.goto(x=-240, y=posizione_y[num])  
-    turtles.append (t)                                                                         
+    turtles.append(t)                                                                         
 
 # usando un ciclo for, la tartaruga creerà un quadrato:
 # for x in range(4):
